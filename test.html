@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .table-standings {
+            font-size: 11px;
+            letter-spacing: .1em;
+            
+        }
+        
+        .table-custom {
+            
+            font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            text-transform: uppercase;
+            line-height: 3.5;
+            border-collapse: collapse;
+            border: none;
+            color: #fff;
+            width: 100%;
+
+        }
+
+        .table-standings tr {
+            transition: all 200ms ease-in-out;
+        }
+        .table-custom-responsive
+        {
+          display: flex;
+      JUSTIFY-CONTENT: CENTER;
+      background-color: #86858584;
+      padding: 4% 0%
+    }
+        table th, td {
+          text-align: center;
+          border-bottom: 1px solid #fff;
+          ;
+      }
+      td{
+        padding: 2% 1%;
+        
+      }
+
+
+        
+
+      .progress-bar1 {
+        height: 10px; /* Set height of progress bar */
+        background-color: #ddd; /* Set background color for the bar */
+        border-radius: 5px; /* Add rounded corners */
+        overflow: hidden; /* Clip overflowing content */
+        display: flex; /* Allow stacking elements horizontally */
+        align-items: center; /* Align content vertically within the bar */
+      }
+      
+      .progress1 {
+        height: 100%; /* Fill the entire height of the progress bar */
+        background-color: limegreen; /* Set progress bar color */
+      }
+      
+      .progress-number1 {
+        margin-left: 5px; /* Add spacing between progress bar and number */
+        font-size: 10px; /* Adjust font size as needed */
+        color: #333; /* Set text color */
+      }
+
+
+      .progress-bar0 {
+        height: 10px; /* Set height of progress bar */
+        background-color: #ddd; /* Set background color for the bar */
+        border-radius: 5px; /* Add rounded corners */
+        overflow: hidden; /* Clip overflowing content */
+        display: flex; /* Allow stacking elements horizontally */
+        align-items: center; /* Align content vertically within the bar */
+      }
+      
+      .progress0 {
+        height: 100%; /* Fill the entire height of the progress bar */
+        background-color: #B6452C; /* Set progress bar color */
+      }
+      
+      .progress-number0 {
+        margin-left: 5px; /* Add spacing between progress bar and number */
+        font-size: 10px; /* Adjust font size as needed */
+        color: #333; /* Set text color */
+      }
+        
+
+      .progress-bar2 {
+        height: 10px; /* Set height of progress bar */
+        background-color: #ddd; /* Set background color for the bar */
+        border-radius: 5px; /* Add rounded corners */
+        overflow: hidden; /* Clip overflowing content */
+        display: flex; /* Allow stacking elements horizontally */
+        align-items: center; /* Align content vertically within the bar */
+      }
+      
+      .progress2 {
+        height: 100%; /* Fill the entire height of the progress bar */
+        background-color: #DF9A13; /* Set progress bar color */
+      }
+      
+      .progress-number2 {
+        margin-left: 5px; /* Add spacing between progress bar and number */
+        font-size: 10px; /* Adjust font size as needed */
+        color: #333; /* Set text color */
+      }
+        
+    </style>
+</head>
+
+<body>
+    <section class="w-100 row d-lg-flex justify-content-lg-around ">
+        <div class="table-custom-responsive col-lg-5 col-sm-12 ">
+            <table class="table-custom table-standings table-classic">
+              <thead>
+                <tr>
+                  
+                  <th>Assist And passing</th>
+                  <th>total</th>
+                  <th >per 90 minute </th>
+                  <th > percentile</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ><span> Assist</span></td>
+                  <td class="team-inline">
+                    4
+                  </td>
+                  <td>0.28</td>
+                  <td > 
+                  
+                    <div class="progress-bar1">
+                      <div class="progress1" style="width: 90%"></div>
+                      <span class="progress-number1">90%</span>
+                    </div>
+                  
+                    
+                  </td>
+                  
+    
+                </tr>
+    
+                <tr>
+                  <td><span>Expected Assists (xA)</span></td>
+                  <td class="team-inline">
+                    3.5
+                  </td>
+                  <td>11.8</td>
+                  <td>                  
+                    <div class="progress-bar0">
+                      <div class="progress0" style="width: 5%"></div>
+                      <span class="progress-number0">0%</span>
+                    </div>
+                </td>
+    
+                </tr>
+                <tr>
+                  <td><span>Passes</span></td>
+                  <td class="team-inline">
+                    171
+                  </td>
+                  <td>8.89</td>
+                  <td>                  
+                    <div class="progress-bar0">
+                      <div class="progress0" style="width: 15%"></div>
+                      <span class="progress-number0">1%</span>
+                    </div>
+                </td>
+                  
+                </tr>
+                <tr>
+                  <td><span>Successful Passes</span></td>
+                  <td class="team-inline">
+                    128/171
+                  </td>
+                  <td>0.28</td>
+                  <td>                  
+                    <div class="progress-bar1">
+                      <div class="progress1" style="width: 90%"></div>
+                      <span class="progress-number1">90%</span>
+                    </div>
+                </td>
+    
+                </tr>
+                <tr>
+                  <td><span>Pass Completion Rate</span></td>
+                  <td class="team-inline">
+                    74.85%
+                  </td>
+                  <td>-</td>
+                  <td>                  
+                    <div class="progress-bar0">
+                      <div class="progress0" style="width: 30%"></div>
+                      <span class="progress-number0">19%</span>
+                    </div>
+                </td>
+    
+                </tr>
+                <tr>
+                  <td><span>Key Passes</span></td>
+                  <td class="team-inline">
+                    16
+                  </td>
+                  <td>1.11</td>
+                  <td>                  
+                    <div class="progress-bar2">
+                      <div class="progress2" style="width: 44%"></div>
+                      <span class="progress-number2">30%</span>
+                    </div>
+                </td>
+                </tr>
+    
+                <tr>
+                    <td><span>Crosses</span></td>
+                    <td class="team-inline">
+                      4
+                    </td>
+                    <td>0.28</td>
+                    <td>                  
+                      <div class="progress-bar1">
+                        <div class="progress1" style="width: 90%"></div>
+                        <span class="progress-number1">90%</span>
+                      </div>
+                  </td>
+      
+                  </tr>
+    
+                  
+                <tr>
+                    <td><span>Successful Crosses</span></td>
+                    <td class="team-inline">
+                      4
+                    </td>
+                    <td>0.28</td>
+                    <td>                  
+                      <div class="progress-bar1">
+                        <div class="progress1" style="width: 90%"></div>
+                        <span class="progress-number1">90%</span>
+                      </div>
+                  </td>
+      
+                  </tr>
+    
+                  
+                <tr>
+                    <td><span>Cross Completion Rate</span></td>
+                    <td class="team-inline">
+                      4
+                    </td>
+                    <td>0.28</td>
+                    <td>                  
+                      <div class="progress-bar1">
+                        <div class="progress1" style="width: 90%"></div>
+                        <span class="progress-number1">90%</span>
+                      </div>
+                  </td>
+      
+                  </tr>
+    
+                  
+                <tr colspan="2">
+                    <td><span>Minutes Per Assist</span></td>
+                    <td class="team-inline">
+                      4
+                    </td>
+                    <td>0.28</td>
+                    <td>                  
+                      <div class="progress-bar1">
+                        <div class="progress1" style="width: 90%"></div>
+                        <span class="progress-number1">90%</span>
+                      </div>
+                  </td>
+      
+                  </tr>
+
+   
+              </tbody>
+            </table>
+          </div>
+          <div class="table-custom-responsive col-lg-5 col-sm-12 ">
+            <table class="table-custom table-standings table-classic">
+              <thead>
+                <tr>
+                  
+                  <th>Assist And passing</th>
+                  <th>total</th>
+                  <th >per 90 minute </th>
+                  <th > percentile</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ><span> Assist</span></td>
+                  <td class="team-inline">
+                    4
+                  </td>
+                  <td>0.28</td>
+                  <td > 
+                  
+                    <div class="progress-bar1">
+                      <div class="progress1" style="width: 90%"></div>
+                      <span class="progress-number1">90%</span>
+                    </div>
+                  
+                    
+                  </td>
+                  
+    
+                </tr>
+    
+                <tr>
+                  <td><span>Expected Assists (xA)</span></td>
+                  <td class="team-inline">
+                    3.5
+                  </td>
+                  <td>11.8</td>
+                  <td>                  
+                    <div class="progress-bar0">
+                      <div class="progress0" style="width: 5%"></div>
+                      <span class="progress-number0">0%</span>
+                    </div>
+                </td>
+    
+                </tr>
+                <tr>
+                  <td><span>Passes</span></td>
+                  <td class="team-inline">
+                    171
+                  </td>
+                  <td>8.89</td>
+                  <td>                  
+                    <div class="progress-bar0">
+                      <div class="progress0" style="width: 15%"></div>
+                      <span class="progress-number0">1%</span>
+                    </div>
+                </td>
+                  
+                </tr>
+                <tr>
+                  <td><span>Successful Passes</span></td>
+                  <td class="team-inline">
+                    128/171
+                  </td>
+                  <td>0.28</td>
+                  <td>                  
+                    <div class="progress-bar1">
+                      <div class="progress1" style="width: 90%"></div>
+                      <span class="progress-number1">90%</span>
+                    </div>
+                </td>
+    
+                </tr>
+                <tr>
+                  <td><span>Pass Completion Rate</span></td>
+                  <td class="team-inline">
+                    74.85%
+                  </td>
+                  <td>-</td>
+                  <td>                  
+                    <div class="progress-bar0">
+                      <div class="progress0" style="width: 30%"></div>
+                      <span class="progress-number0">19%</span>
+                    </div>
+                </td>
+    
+                </tr>
+                <tr>
+                  <td><span>Key Passes</span></td>
+                  <td class="team-inline">
+                    16
+                  </td>
+                  <td>1.11</td>
+                  <td>                  
+                    <div class="progress-bar2">
+                      <div class="progress2" style="width: 44%"></div>
+                      <span class="progress-number2">30%</span>
+                    </div>
+                </td>
+                </tr>
+    
+                <tr>
+                    <td><span>Crosses</span></td>
+                    <td class="team-inline">
+                      4
+                    </td>
+                    <td>0.28</td>
+                    <td>                  
+                      <div class="progress-bar1">
+                        <div class="progress1" style="width: 90%"></div>
+                        <span class="progress-number1">90%</span>
+                      </div>
+                  </td>
+      
+                  </tr>
+    
+                  
+                <tr>
+                    <td><span>Successful Crosses</span></td>
+                    <td class="team-inline">
+                      4
+                    </td>
+                    <td>0.28</td>
+                    <td>                  
+                      <div class="progress-bar1">
+                        <div class="progress1" style="width: 90%"></div>
+                        <span class="progress-number1">90%</span>
+                      </div>
+                  </td>
+      
+                  </tr>
+    
+                  
+                <tr>
+                    <td><span>Cross Completion Rate</span></td>
+                    <td class="team-inline">
+                      4
+                    </td>
+                    <td>0.28</td>
+                    <td>                  
+                      <div class="progress-bar1">
+                        <div class="progress1" style="width: 90%"></div>
+                        <span class="progress-number1">90%</span>
+                      </div>
+                  </td>
+      
+                  </tr>
+    
+                  
+                <tr colspan="2">
+                    <td><span>Minutes Per Assist</span></td>
+                    <td class="team-inline">
+                      4
+                    </td>
+                    <td>0.28</td>
+                    <td>                  
+                      <div class="progress-bar1">
+                        <div class="progress1" style="width: 90%"></div>
+                        <span class="progress-number1">90%</span>
+                      </div>
+                  </td>
+      
+                  </tr>
+
+   
+              </tbody>
+            </table>
+          </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table with Progress Bars</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+      
+      table {
+        border-collapse: collapse; /* Remove borders between cells */
+        width: 100%; /* Optional: Set table width */
+      }
+      
+      th, td {
+        border: 1px solid #ddd; /* Add a thin border to all cells */
+        padding: 8px; /* Add spacing between content and cell borders */
+        text-align: left; /* Left-align text content */
+      }
+      
+      th {
+        background-color: #f2f2f2; /* Light gray background for headers */
+      }
+      
+      .progress-bar {
+        height: 10px; /* Set height of progress bar */
+        background-color: #ddd; /* Set background color for the bar */
+        border-radius: 5px; /* Add rounded corners */
+        overflow: hidden; /* Clip overflowing content */
+        display: flex; /* Allow stacking elements horizontally */
+        align-items: center; /* Align content vertically within the bar */
+      }
+      
+      .progress {
+        height: 100%; /* Fill the entire height of the progress bar */
+        background-color: limegreen; /* Set progress bar color */
+      }
+      
+      .progress-number {
+        margin-left: 5px; /* Add spacing between progress bar and number */
+        font-size: 10px; /* Adjust font size as needed */
+        color: #333; /* Set text color */
+      }
+      
+</style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Dribbles</th>
+        <th>Successful Dribbles</th>
+        <th>Dribble Success Rate</th>
+        <th>Dispossessed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>11</td>
+        <td>6</td>
+        <td>54.55%</td>
+        <td>
+          <div class="progress-bar">
+            <div class="progress" style="width: 50%"></div>
+            <span class="progress-number">50%</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        </tr>
+      </tbody>
+  </table>
+</body>
+</html>
